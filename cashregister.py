@@ -70,6 +70,7 @@ class Transaction:
         '''
         try: # Update price if the item exists in cart
             self.cart[item_name][1] = new_price
+            self.cart[item_name][2] = new_price * self.cart[item_name][0]
             
         except KeyError: # Print if the item does not exist in cart
             print(f"{item_name} does not exist in your cart")
