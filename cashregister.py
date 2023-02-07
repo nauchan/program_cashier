@@ -122,23 +122,23 @@ class Transaction:
             grand_total += self.cart[key][2]
         
         if grand_total > 200000:
-            print(f"Total price: Rp{grand_total}")
+            print(f"Total price: Rp.{grand_total}")
             amount_to_pay = 0.95*grand_total
             print("You are eligible to get 5% discount!")
-            print(f"Amount to pay: Rp{amount_to_pay}")
+            print(f"Amount to pay: Rp.{amount_to_pay}")
         
         elif grand_total > 300000:
-            print(f"Total price: Rp{grand_total}")
+            print(f"Total price: Rp.{grand_total}")
             amount_to_pay = 0.92*grand_total
             print("You are eligible to get 8% discount!")
-            print(f"Amount to pay: Rp{amount_to_pay}")
+            print(f"Amount to pay: Rp.{amount_to_pay}")
         
         elif grand_total > 500000:
-            print(f"Total price: Rp{grand_total}")
+            print(f"Total price: Rp.{grand_total}")
             amount_to_pay = 0.9*grand_total
             print("You are eligible to get 10% discount!")
-            print(f"Amount to pay: Rp{amount_to_pay}")
+            print(f"Amount to pay: Rp.{amount_to_pay}")
         
         else:
-            print(f"Amount to pay: Rp{grand_total}")
+            print(f"Amount to pay: Rp.{grand_total}")
         
