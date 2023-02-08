@@ -17,3 +17,15 @@ A program is needed for a cash register at a self-service supermarket. Using thi
 
 ## Flowchart
 ![Flowchart](pics/flowchart_cashier.png "Flowchart")
+The program first prompts the user to input their customer or membership ID. After that, it expects users to choose menu or operations to take by inputting a number that corresponds to the menu itself:
+1. Add item
+2. Delete item
+3. Update item name
+4. Update item quantity
+5. Update item price
+6. Check order
+7. Display total price
+8. Reset shopping cart
+0. Exit
+
+After an operation is done, the program will ask whether the user wants to end shopping or the continue with other operation. If the user wants to continue with other operations, the program will again ask which menu or operation to take. If the user wants to end shopping, it quits the loop and display order details and price to pay.
