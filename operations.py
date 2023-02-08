@@ -26,13 +26,27 @@ def ask_prompt():
 
 def continue_prompt(repeat):
     '''Function to ask whether the user still want to continue the program'''
+    
+    # Looping to make sure users only input y or n
+    while True:
+        try:
+            cont = input('Do you want to make some changes on your cart? [y/n]: ')
+            
+            if cont == 'y' or cont == 'Y': # if y, then repeat becomes True and exit the loop
+                repeat = True
+                break
+            
+            elif cont == 'n' or cont == 'N': # if n, then repeat becomes False and exit the loop
+                repeat = False
+                break
 
-    cont = input('Do you want to make some changes on your cart? [y/n]: ')
+            else: # Anything other than y or n will raise a ValueError
+                print("Please input 'y' or 'n'")
+                raise ValueError
+        
+        except ValueError: # Back to the loop
+            continue
 
-    if cont == 'y' or cont == 'Y':
-        repeat = True
-    else:
-        repeat = False
     return repeat
 
 def select_menu(trx, menu):
