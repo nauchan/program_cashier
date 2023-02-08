@@ -16,3 +16,4 @@ A program is needed for a cash register at a self-service supermarket. Using thi
 - The program can calculate the total price, including discounts.
 
 ## Flowchart
+![Flowchart](pics/flowchart_cashier.png "Flowchart")
