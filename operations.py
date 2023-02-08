@@ -12,12 +12,22 @@ def ask_prompt():
     print('Type 7 to display total price')
     print('Type 8 to reset your shopping cart')
     print('Type 0 to exit')
+    
+    while True:
+        try:
+            menu = int(input('Your choice: '))
+            break
+        
+        except ValueError:
+            print('Please  enter number from 0 to 8')
+            continue
 
-    menu = int(input('Your choice: '))
     return menu
 
 def continue_prompt(repeat):
-    cont = input('Continue program? [y/n]: ')
+    '''Function to ask whether the user still want to continue the program'''
+
+    cont = input('Do you want to make some changes on your cart? [y/n]: ')
 
     if cont == 'y' or cont == 'Y':
         repeat = True
@@ -26,21 +36,39 @@ def continue_prompt(repeat):
     return repeat
 
 def select_menu(trx, menu):
+    '''
+    Function to select menu displayed by ask_prompt()
+    
+    select_menu(trx, menu)
+
+    Parameters:
+    trx     = transaction, class Transaction()
+    menu    = menu choice selected by user, int
+    
+    '''
     if menu == 1:
         print('\nAdd Item')
         item_name = input('Item Name: ')
-
-        try:
-            item_qty = int(input('Item Quantity: '))
-        except ValueError:
-            print('Input numbers only')
-            item_qty = int(input('Item Quantity: '))
-
-        try:
-            item_price = int(input('Item Price: '))
-        except ValueError:
-            print('Input numbers only')
-            item_price = int(input('Item Price: '))
+        
+        # Looping to make sure that the user only inputs int
+        while True:
+            try: # Prompt to input Item quantity
+                item_qty = int(input('Item Quantity: '))
+                break # If true, exit the loop
+            
+            except ValueError:
+                print('Input numbers only')
+                continue # If false, go back to the loop
+        
+        # Looping to make sure that the user only inputs int
+        while True:
+            try:
+                item_price = int(input('Item Price: '))
+                break
+            
+            except ValueError:
+                print('Input numbers only')
+                continue
 
         trx.add_item(item_name, item_qty, item_price)
     
@@ -59,11 +87,15 @@ def select_menu(trx, menu):
         print('\nUpdate Item Quantity')
         item_name = input('Item Name: ')
 
-        try:
-            new_qty = int(input('New Item Quantity: '))
-        except ValueError:
-            print('Input numbers only')
-            new_qty = int(input('New Item Quantity: '))
+        # Looping to make sure that the user only inputs int
+        while True:
+            try:
+                new_qty = int(input('New Item Quantity: '))
+                break
+            
+            except ValueError:
+                print('Input numbers only')
+                continue
 
         trx.update_item_qty(item_name, new_qty)
 
@@ -71,12 +103,16 @@ def select_menu(trx, menu):
         print('\nUpdate Item Price')
         item_name = input('Item Name: ')
         
-        try:
-            new_price = int(input('New Item Price: '))
-        except ValueError:
-            print('Input numbers only')
-            new_price = int(input('New Item Price: '))
+        # Looping to make sure that the user only inputs int
+        while True:
+            try:
+                new_price = int(input('New Item Price: '))
+                break
             
+            except ValueError:
+                print('Input numbers only')
+                continue
+
         trx.update_item_price(item_name, new_price)
 
     elif menu == 6:
