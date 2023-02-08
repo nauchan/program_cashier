@@ -17,6 +17,7 @@ A program is needed for a cash register at a self-service supermarket. Using thi
 
 ## Flowchart
 ![Flowchart](pics/flowchart_cashier.png "Flowchart")
+
 The program first prompts the user to input their customer or membership ID. After that, it expects users to choose menu or operations to take by inputting a number that corresponds to the menu itself:
 1. Add item
 2. Delete item
