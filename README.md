@@ -68,3 +68,30 @@ Two items are going to be added:
 ![test_case_1_2](pics/case1_2.png "Test Case 1")
 ![test_case_1_3](pics/case1_3.png "Test Case 1")
 
+### #2 Delete Item
+One item is going to be deleted:
+1. Item Name: Pasta Gigi
+
+![test_case_2_1](pics/case2_1.png "Test Case 2")
+![test_case_2_2](pics/case2_2.png "Test Case 2")
+
+### #3 Reset Transaction
+All items in the shopping cart are going to be deleted.
+
+![test_case_3_1](pics/case3_1.png "Test Case 3")
+![test_case_3_2](pics/case3_2.png "Test Case 3")
+
+### #4 Total Price
+Several items are going to be added first to the cart, which includes:
+1. Item Name: Ayam Goreng, Quantity: 2, Price: 20000
+2. Item Name: Pasta Gigi, Quantity: 3, Price: 15000
+3. Item Name: Mainan Mobil, Quantity: 1, Price: 200000
+4. Item Name: Mi Instan, Quantity: 5, Price: 3000
+Check order are going to be executed and lastly, the total price that should be paid by the customer are going to be displayed.
+
+![test_case_4_1](pics/case4_1.png "Test Case 4")
+![test_case_4_2](pics/case4_2.png "Test Case 4")
+![test_case_4_3](pics/case4_3.png "Test Case 4")
+![test_case_4_4](pics/case4_4.png "Test Case 4")
+![test_case_4_5](pics/case4_5.png "Test Case 4")
+![test_case_4_6](pics/case4_6.png "Test Case 4")
