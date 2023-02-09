@@ -87,6 +87,7 @@ Several items are going to be added first to the cart, which includes:
 > 2. Item Name: Pasta Gigi, Quantity: 3, Price: 15000
 > 3. Item Name: Mainan Mobil, Quantity: 1, Price: 200000
 > 4. Item Name: Mi Instan, Quantity: 5, Price: 3000
+
 Check order are going to be executed and lastly, the total price that should be paid by the customer are going to be displayed.
 
 ![test_case_4_1](pics/case4_1.png "Test Case 4")
