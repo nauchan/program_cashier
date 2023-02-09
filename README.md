@@ -1,5 +1,5 @@
 # Simple Cashier Program
-This project demonstrates a simple program with several basic operations that are necessary to register items at the cashier. The program is built mainly as function and object based program using Python (OOP). More details about this program will be further discussed in this documentation.
+This project demonstrates a simple program with several basic operations that are necessary to register items at the cashier. The program is built mainly using functions and object (hence object oriented programming (OOP)). More details about this program will be further discussed in this documentation.
 
 ---
 
@@ -61,8 +61,8 @@ This is the main program. Once the user runs the program, it will prompt the use
 ## Test Case
 ### #1 Add Item
 Two items are going to be added:
-1. Item Name: Ayam Goreng, Quantity: 2, Price: 20000
-2. Item Name: Pasta Gigi, Quantity: 3, Price: 15000
+> 1. Item Name: Ayam Goreng, Quantity: 2, Price: 20000
+> 2. Item Name: Pasta Gigi, Quantity: 3, Price: 15000
 
 ![test_case_1_1](pics/case1_1.png "Test Case 1")
 ![test_case_1_2](pics/case1_2.png "Test Case 1")
@@ -70,7 +70,7 @@ Two items are going to be added:
 
 ### #2 Delete Item
 One item is going to be deleted:
-1. Item Name: Pasta Gigi
+> 1. Item Name: Pasta Gigi
 
 ![test_case_2_1](pics/case2_1.png "Test Case 2")
 ![test_case_2_2](pics/case2_2.png "Test Case 2")
@@ -83,10 +83,10 @@ All items in the shopping cart are going to be deleted.
 
 ### #4 Total Price
 Several items are going to be added first to the cart, which includes:
-1. Item Name: Ayam Goreng, Quantity: 2, Price: 20000
-2. Item Name: Pasta Gigi, Quantity: 3, Price: 15000
-3. Item Name: Mainan Mobil, Quantity: 1, Price: 200000
-4. Item Name: Mi Instan, Quantity: 5, Price: 3000
+> 1. Item Name: Ayam Goreng, Quantity: 2, Price: 20000
+> 2. Item Name: Pasta Gigi, Quantity: 3, Price: 15000
+> 3. Item Name: Mainan Mobil, Quantity: 1, Price: 200000
+> 4. Item Name: Mi Instan, Quantity: 5, Price: 3000
 Check order are going to be executed and lastly, the total price that should be paid by the customer are going to be displayed.
 
 ![test_case_4_1](pics/case4_1.png "Test Case 4")
@@ -95,3 +95,6 @@ Check order are going to be executed and lastly, the total price that should be 
 ![test_case_4_4](pics/case4_4.png "Test Case 4")
 ![test_case_4_5](pics/case4_5.png "Test Case 4")
 ![test_case_4_6](pics/case4_6.png "Test Case 4")
+
+## Conclusion
+A cash registering program using Python has successfully been made. Expect some flaws here and there in the code and I am always open for everyone's feedback!:heartpulse:
