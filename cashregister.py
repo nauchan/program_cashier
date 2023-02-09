@@ -97,6 +97,7 @@ class Transaction:
     def reset_transaction(self):
         '''Clear all items in the cart.'''
         self.cart.clear()
+        print("All items have successfully been deleted")
     
     def check_order(self):
         '''Method to display all items in the shopping cart.'''
