@@ -63,6 +63,7 @@ This is the main program. Once the user runs the program, it will prompt the use
 Two items are going to be added:
 1. Item Name: Ayam Goreng, Quantity: 2, Price: 20000
 2. Item Name: Pasta Gigi, Quantity: 3, Price: 15000
+
 ![test_case_1_1](pics/case1_1.png "Test Case 1")
 ![test_case_1_2](pics/case1_2.png "Test Case 1")
 ![test_case_1_3](pics/case1_3.png "Test Case 1")
