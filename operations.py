@@ -56,7 +56,7 @@ def select_menu(trx, menu):
     select_menu(trx, menu)
 
     Parameters:
-    trx     = transaction, class Transaction()
+    trx     = transaction, object Transaction()
     menu    = menu choice selected by user, int
     
     '''
