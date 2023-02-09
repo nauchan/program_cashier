@@ -50,4 +50,20 @@ This file stores an attribute and all methods for transaction in a class called 
     - `reset_transaction()`: this method is used to clear all items in `cart`. No input is needed.
 
 ### operations.py
-This file stores functions that are necessary for several operations in the main program. The motivation to make an operation as function is, of course, :rainbow:**DRY**:rainbow:.
+This file stores functions that are necessary for several operations in the main program. The motivation to make an operation as function is, of course, :rainbow:**DRY**:rainbow:. The functions defined in this file is listed as follows:
+- `ask_prompt()`: this function asks which menu that the user wants to choose and the user is expected to input the number of the corresponding menu. The menu is already described in the flowchart. This function will return the user's choice as a variable.
+- `continue_prompt(repeat)`: this function asks whether the user wants to stop the operation. The input argument `repeat` is boolean with True value by default. If the user still wants to continue, the program will loop and execute `ask_prompt()` again. If the user wants to stop, `repeat` will become False and the program will exit the loop and display the order list and total price.
+- `select_menu(trx, menu)`: this function will select the method of object defined in cashregister.py based on the user input by function `ask_prompt()`. The input arguments include object `trx` and `menu` of user's choice.
+
+### main.py
+This is the main program. Once the user runs the program, it will prompt the user to input membership or customer ID. The customer ID will then be stored it a dictionary called `trx` as `trx[cust_ID]`. This `trx[cust_ID]` is then made as an object of `Transaction()` class. For the rest of the program, it will ask the user to input their desired menu or operation, and whether the user wants to end their shopping.
+
+## Test Case
+### #1 Add Item
+Two items are going to be added:
+1. Item Name: Ayam Goreng, Quantity: 2, Price: 20000
+2. Item Name: Pasta Gigi, Quantity: 3, Price: 15000
+![test_case_1_1](pics/case1_1.png "Test Case 1")
+![test_case_1_2](pics/case1_2.png "Test Case 1")
+![test_case_1_3](pics/case1_3.png "Test Case 1")
+
