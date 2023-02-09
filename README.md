@@ -1,5 +1,5 @@
 # Simple Cashier Program
-This project demonstrates a simple program with several basic operations that are necessary to register items at the cashier. The program is built mainly using functions and object (hence object oriented programming (OOP)). More details about this program will be further discussed in this documentation.
+This project demonstrates a simple program with several basic operations that are necessary to register items at the cashier. The program is built mainly using functions and object (hence object oriented programming OOP) in Python. More details about this program will be further discussed in this documentation.
 
 ---
 
